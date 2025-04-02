@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
           <footer className="bg-black text-white">
             {/* Top Section */}
             <div className="bg-lime-400 text-black text-4xl font-bold p-10">
-              Start Hustling...
+              KȝȝP Hʋstlin⅁...
             </div>
 
             {/* Footer Content */}
