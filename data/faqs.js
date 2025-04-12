@@ -1,32 +1,32 @@
 export const faqs = [
-    {
-      question: "What makes Sensai unique as a career development tool?",
+  {
+      question: "What distinguishes Sync.AI as a tool for career advancement?",
       answer:
-        "Sensai combines AI-powered career tools with industry-specific insights to help you advance your career. Our platform offers three main features: an intelligent resume builder, a cover letter generator, and an adaptive interview preparation system. Each tool is tailored to your industry and skills, providing personalized guidance for your professional journey.",
-    },
-    {
-      question: "How does Sensai create tailored content?",
+          "Sync.AI integrates AI-driven career resources with specialized industry knowledge to support your professional development. Our platform provides three key functionalities: an intelligent resume creator, a personalized cover letter writer, and a dynamic interview training system. Each feature is adapted to your specific industry and competencies, offering customized assistance for your career path.",
+  },
+  {
+      question: "How does Sync.AI produce personalized content?",
       answer:
-        "Sensai learns about your industry, experience, and skills during onboarding. It then uses this information to generate customized resumes, cover letters, and interview questions. The content is specifically aligned with your professional background and industry standards, making it highly relevant and effective.",
-    },
-    {
-      question: "How accurate and up-to-date are Sensai's industry insights?",
+          "Sync.AI gathers information about your field, background, and abilities during the initial setup. It then leverages this data to generate tailored resumes, cover letters, and interview questions. The content is precisely aligned with your professional history and industry benchmarks, ensuring high relevance and effectiveness.",
+  },
+  {
+      question: "How reliable and current are Sync.AI's industry insights?",
       answer:
-        "We update our industry insights weekly using advanced AI analysis of current market trends. This includes salary data, in-demand skills, and industry growth patterns. Our system constantly evolves to ensure you have the most relevant information for your career decisions.",
-    },
-    {
-      question: "Is my data secure with Sensai?",
+          "We refresh our industry data on a weekly basis, employing sophisticated AI analysis of current market trends. This includes salary benchmarks, sought-after skills, and industry growth trends. Our system is continuously updated to deliver the most pertinent information for your career decisions.",
+  },
+  {
+      question: "Is my data protected by Sync.AI?",
       answer:
-        "Absolutely. We prioritize the security of your professional information. All data is encrypted and securely stored using industry-standard practices. We use Clerk for authentication and never share your personal information with third parties.",
-    },
-    {
-      question: "How can I track my interview preparation progress?",
+          "Certainly. We prioritize the confidentiality of your professional details. All data is encrypted and securely stored following industry-leading protocols. We utilize Clerk for authentication and never distribute your personal information to external parties.",
+  },
+  {
+      question: "How can I monitor my interview preparation progress?",
       answer:
-        "Sensai tracks your performance across multiple practice interviews, providing detailed analytics and improvement suggestions. You can view your progress over time, identify areas for improvement, and receive AI-generated tips to enhance your interview skills based on your responses.",
-    },
-    {
-      question: "Can I edit the AI-generated content?",
+          "Sync.AI monitors your performance across multiple simulated interviews, offering comprehensive analytics and suggestions for improvement. You can track your development over time, identify areas needing attention, and receive AI-generated tips to enhance your interview performance based on your responses.",
+  },
+  {
+      question: "Am I able to modify the AI-generated content?",
       answer:
-        "Yes! While Sensai generates high-quality initial content, you have full control to edit and customize all generated resumes, cover letters, and other content. Our markdown editor makes it easy to refine the content to perfectly match your needs.",
-    },
-  ];
+          "Indeed! While Sync.AI delivers top-tier initial content, you retain complete control to revise and personalize all created resumes, cover letters, and other materials. Our markdown editor simplifies the process of fine-tuning the content to perfectly suit your requirements.",
+  },
+];

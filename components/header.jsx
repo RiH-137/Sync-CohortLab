@@ -27,15 +27,13 @@ const Header = () => {
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
 
 
-        <Link href="/">
-          <Image
-            src={"/logo.png"}
-            alt="Sensai Logo"
-            width={200}
-            height={60}
-            className="h-12 py-1 w-auto object-contain"
-          />
-        </Link>
+      <Link href="/">
+       
+          <div className="text-4xl font-bold md:text-6xl lg:text-4xl 5xl:text-6xl gradient-title animate-gradient">
+      Sync.AI</div>
+      
+      </Link>
+
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-2 md:space-x-4">

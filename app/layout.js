@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
           <footer className="bg-black text-white">
             {/* Top Section */}
             <div className="bg-lime-400 text-black text-4xl font-bold p-10">
-              KȝȝP Hʋstlin⅁...
+              KȝȝP HʋstlinG...
             </div>
 
             {/* Footer Content */}
@@ -58,8 +58,8 @@ export default function RootLayout({ children }) {
                 <Image
                   src="/img.jpg"
                   alt="Footer Image"
-                  width={150}
-                  height={100}
+                  width={500}
+                  height={300}
                   className="mb-4"
                 />
                 <p className="text-sm text-gray-400">

@@ -30,6 +30,9 @@ export default function LandingPage() {
       {/* Hero Section */}
       <HeroSection />
 
+
+
+
       {/* Features Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 md:px-6">
@@ -57,20 +60,25 @@ export default function LandingPage() {
         </div>
       </section>
 
+
+
+
+
+
       {/* Stats Section */}
       <section className="w-full py-12 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">50+</h3>
+              <h3 className="text-4xl font-bold">70+</h3>
               <p className="text-muted-foreground">Industries Covered</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">1000+</h3>
+              <h3 className="text-4xl font-bold">1500+</h3>
               <p className="text-muted-foreground">Interview Questions</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">95%</h3>
+              <h3 className="text-4xl font-bold">93.5%</h3>
               <p className="text-muted-foreground">Success Rate</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-2">
@@ -80,6 +88,12 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+
+
+
+
+
 
       {/* How It Works Section */}
       <section className="w-full py-12 md:py-24 bg-background">
@@ -157,6 +171,10 @@ export default function LandingPage() {
         </div>
       </section>
 
+
+
+
+
       {/* FAQ Section */}
       <section className="w-full py-12 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
@@ -183,6 +201,10 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+
+
+
 
       {/* CTA Section */}
       <section className="w-full">

@@ -1,26 +1,26 @@
 export const testimonial = [
-    {
-      quote:
-        "The AI-powered interview prep was a game-changer. Landed my dream job at a top tech company!",
-      author: "Sarah Chen",
-      image: "https://randomuser.me/api/portraits/women/75.jpg",
-      role: "Software Engineer",
-      company: "Tech Giant Co.",
-    },
-    {
-      quote:
-        "The industry insights helped me pivot my career successfully. The salary data was spot-on!",
-      author: "Michael Rodriguez",
-      image: "https://randomuser.me/api/portraits/men/75.jpg",
-      role: "Product Manager",
-      company: "StartUp Inc.",
-    },
-    {
-      quote:
-        "My resume's ATS score improved significantly. Got more interviews in two weeks than in six months!",
-      author: "Priya Patel",
-      image: "https://randomuser.me/api/portraits/women/74.jpg",
-      role: "Marketing Director",
-      company: "Global Corp",
-    },
-  ];
+  {
+    quote:
+      "The AI-driven interview training completely transformed my approach. I secured my ideal role at a leading technology firm!",
+    author: "Aditya Ranjan",
+    image: "https://randomuser.me/api/portraits/men/74.jpg",
+    role: "Product Manager",
+    company: "SwapSo.io",
+  },
+  {
+    quote:
+      "The sector-specific intelligence facilitated a smooth career transition for me. The compensation figures were remarkably accurate!",
+    author: "Dev Goyal",
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
+    role: "Marketing Director",
+    company: "SwapSo.io",
+  },
+  {
+    quote:
+      "My resume's compatibility with Applicant Tracking Systems (ATS) saw a substantial increase. I received more interview invitations in a fortnight than I had in half a year!",
+    author: "Rishi Ranjan",
+    image: "https://randomuser.me/api/portraits/men/77.jpg",
+    role: "Founder & CEO",
+    company: "CohortLab",
+  },
+];
