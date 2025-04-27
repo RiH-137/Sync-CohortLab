@@ -8,6 +8,7 @@ datasource db {
 }
 
 model User {
+  // fields     // data type       //relation
   id            String    @id @default(uuid())
   clerkUserId   String    @unique // clerk user id
   email         String    @unique
