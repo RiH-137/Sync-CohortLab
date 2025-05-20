@@ -39,6 +39,22 @@ export async function updateUser(data) {
           });
         }
 
+        // if (!industryInsight) {
+        //     industryInsight = await tx.industryInsight.create({
+        //         data: {
+        //             industry: data.industry,
+        //             salaryRanges: [],
+        //             growthRate: 0,
+        //             demandLevel: "MEDIUM",
+        //             topSkills: [],
+        //             marketOutlook: "NEUTRAL",
+        //             keyTrends:[],
+        //             recommendedSkills:[],
+        //             nextUpdate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+        //         }
+        //     })
+        // }
+
         // Now update the user
         const updatedUser = await tx.user.update({
           where: {
@@ -59,11 +75,13 @@ export async function updateUser(data) {
       }
     );
 
-    revalidatePath("/");
-    return result.user;
+    // revalidatePath("/");
+    // return result.user;
+
+    return { success: true, ...result };
   } catch (error) {
     console.error("Error updating user and industry:", error.message);
-    throw new Error("Failed to update profile");
+    throw new Error("Failed to update profile" + error.message);
   }
 }
 

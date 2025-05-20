@@ -16,6 +16,7 @@ import { generateQuiz, saveQuizResult } from "@/actions/interview";
 import QuizResult from "./quiz-result";
 import useFetch from "@/hooks/use-fetch";
 import { BarLoader } from "react-spinners";
+import { Loader2 } from "lucide-react";
 
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -34,6 +35,8 @@ export default function Quiz() {
     data: resultData,
     setData: setResultData,
   } = useFetch(saveQuizResult);
+
+  console.log(resultData);
 
   useEffect(() => {
     if (quizData) {
@@ -165,7 +168,7 @@ export default function Quiz() {
           className="ml-auto"
         >
           {savingResult && (
-            <BarLoader className="mt-4" width={"100%"} color="gray" />
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
           )}
           {currentQuestion < quizData.length - 1
             ? "Next Question"

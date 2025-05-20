@@ -33,7 +33,23 @@ export const generateAIInsights = async (industry) => {
   const text = response.text();
   const cleanedText = text.replace(/```(?:json)?\n?/g, "").trim();
 
-  return JSON.parse(cleanedText);
+  // return JSON.parse(cleanedText);
+
+  const insights = JSON.parse(cleanedText);
+
+  // Ensure the demandLevel is capitalized correctly
+  if (insights.demandLevel) {
+    insights.demandLevel = insights.demandLevel.toUpperCase(); // Convert to uppercase (HIGH, MEDIUM, LOW)
+  }
+
+  // Ensure the marketOutlook is capitalized correctly
+  if (insights.marketOutlook) {
+    insights.marketOutlook = insights.marketOutlook.toUpperCase(); // Convert to uppercase (POSITIVE, NEGATIVE, STABLE)
+  }
+
+  return insights;
+
+  
 };
 
 export async function getIndustryInsights() {
