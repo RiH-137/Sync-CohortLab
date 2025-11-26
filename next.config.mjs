@@ -8,6 +8,10 @@ const nextConfig = {
           },
         ],
     },
+    reactStrictMode: false, // Temporarily disable to reduce hydration issues
+    experimental: {
+        optimizePackageImports: ['@clerk/nextjs'],
+    },
 };
 
 export default nextConfig;

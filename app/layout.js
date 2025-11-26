@@ -6,6 +6,7 @@ import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { dark } from "@clerk/themes";
 import Image from "next/image";
+import HydrationErrorBoundary from "@/components/hydration-error-boundary";
 const inter = Inter({ subsets: ["latin"] });
 import { neobrutalism, shadesOfPurple } from '@clerk/themes'
 
@@ -25,12 +26,13 @@ export default function RootLayout({ children }) {
         variables: { '#9AE600': '#9AE600' },
       },
     }}
+    dynamic
   >
       <html lang="en" suppressHydrationWarning>
         <head>
           <link rel="icon" href="/logo.png" sizes="any" />
         </head>
-        <body className={`${inter.className}`} cz-shortcut-listen="true">
+        <body className={`${inter.className}`} cz-shortcut-listen="true" suppressHydrationWarning>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -38,7 +40,9 @@ export default function RootLayout({ children }) {
             disableTransitionOnChange
           >
             {/* header */}
-            <Header />
+            <HydrationErrorBoundary>
+              <Header />
+            </HydrationErrorBoundary>
 
             <main className="min-h-screen">
               {children}

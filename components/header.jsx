@@ -9,7 +9,6 @@ import {
   StarsIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,6 +17,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import { checkUser } from "@/lib/checkUser";
+import ClerkUserButton from "./clerk-user-button";
+import { ClerkSignedIn, ClerkSignedOut, ClerkSignInButton } from "./clerk-auth-wrappers";
 
 
 // export default async function Header() {
@@ -39,7 +40,7 @@ const Header = async() => {
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-2 md:space-x-4">
-          <SignedIn>
+          <ClerkSignedIn>
             <Link href="/dashboard">
               <Button
                 variant="outline"
@@ -86,16 +87,16 @@ const Header = async() => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-          </SignedIn>
+          </ClerkSignedIn>
 
-          <SignedOut>
-            <SignInButton>
+          <ClerkSignedOut>
+            <ClerkSignInButton>
               <Button variant="outline">Sign In</Button>
-            </SignInButton>
-          </SignedOut>
+            </ClerkSignInButton>
+          </ClerkSignedOut>
 
-          <SignedIn>
-            <UserButton
+          <ClerkSignedIn>
+            <ClerkUserButton
               appearance={{
                 elements: {
                   avatarBox: "w-10 h-10",
@@ -105,7 +106,7 @@ const Header = async() => {
               }}
               afterSignOutUrl="/"
             />
-          </SignedIn>
+          </ClerkSignedIn>
         </div>
       </nav>
     </header>
